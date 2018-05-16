@@ -1,5 +1,6 @@
 # Using Tweepy's Module for pulling API data
 # http://docs.tweepy.org/en/v3.5.0/api.html#api-reference
+# hidsp18507
 
 from tweepy import OAuthHandler
 from tweepy import API
@@ -30,7 +31,7 @@ def main():
     # client = MongoClient("mongodb://localhost:27017/")
     # connection = pymongo.Connection("mongodb://localhost", safe = True)
     # query = str(input(What search term/hashtag would you like to scrape?))
-    client = MongoClient("mongodb+srv://hidsp18507:hidsp18507!@cluster524-vl3t1.mongodb.net/twitter")
+    client = MongoClient("mongodb+srv://REMOVED:REMOVED!@cluster524-vl3t1.mongodb.net/twitter")
     query = "#LockHerUp"
     scrape = twitterscrape(query)
     db = client.twitter
